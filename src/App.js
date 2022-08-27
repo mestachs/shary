@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import QRCode from "react-qr-code";
+import { useState } from "react";
 function App() {
+  const [textToShare, setTextToShare] = useState(
+    "Stéphan is the best. utf-8 is hard"
+  );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>the <i>Shary</i> on the cake</h1>
+      <QRCode value={textToShare}></QRCode>
+
+      <textarea
+        style={{width: "80%"}}
+        rows="15"
+        onChange={(c) => setTextToShare(c.target.value)}
+        value={textToShare}
+      ></textarea>
+
+      <p>Type/Paste your content, point your telephone at the screen that's it.</p>
     </div>
   );
 }
