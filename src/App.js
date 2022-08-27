@@ -7,17 +7,22 @@ function App() {
   );
   return (
     <div className="App">
-      <h1>the <i>Shary</i> on the cake</h1>
+      <h1>
+        The <i style={{ color: "#D2042D" }}>Shary</i> on the cake
+      </h1>
+      <div>
+      <p>Want to share text from your laptop to your mobile ?</p>
+      <p>Type/Paste your content, point your telephone at the screen that's it.</p>
+      <p>It's generally safe. The data is only in your browser and on your screen. Just don't let people screenshot your screen</p>
+      </div>
       <QRCode value={textToShare}></QRCode>
 
       <textarea
-        style={{width: "80%"}}
         rows="15"
+        cols="120"
         onChange={(c) => setTextToShare(c.target.value)}
         value={textToShare}
       ></textarea>
-
-      <p>Type/Paste your content, point your telephone at the screen that's it.</p>
     </div>
   );
 }
