@@ -2,8 +2,9 @@ import "./App.css";
 import QRCode from "react-qr-code";
 import { useState } from "react";
 function App() {
-  const [textToShare, setTextToShare] = useState(
-    "Stéphan is the best. utf-8 is hard"
+  let params = (new URL(document.location)).searchParams;
+  const [textToShare, setTextToShare] = useState(params.get("q") || 
+    "https://mestachs.github.io/shary/?q=Stéphan is the best. utf-8 is hard"
   );
   return (
     <div className="App">
