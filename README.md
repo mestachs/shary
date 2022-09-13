@@ -1,10 +1,11 @@
 # Shary
 
-Tried to solve my sharing problem from laptop to mobile... with just a qr code.
+Tried to solve my sharing problem from laptop to mobile... with just a [qr code](https://mestachs.github.io/shary/).
 
 Want to share text or url from your laptop to your mobile ?
 Type/Paste your content, point your telephone camera at the screen that's it.
 It's generally safe. The data is only in your browser and on your screen. Just don't let people screenshot your screen.
+
 
 ## Still don't use a usage case ? 
 
