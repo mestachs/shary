@@ -49,6 +49,10 @@ https://mestachs.github.io/shary/?q=geo:0.0408829980245729,18.2537636221341
 
 https://blog.shahednasser.com/generate-10-qr-code-types-with-react/
 
+## Share for payment
+
+see https://en.wikipedia.org/wiki/EPC_QR_code
+
 ## want to know more about qr codes ? 
 
 https://twitter.com/DanHollick/status/1570040185500626947
